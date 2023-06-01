@@ -1,23 +1,20 @@
 
-
 body{
     padding: 50px;
 }
 
 .card-box{
-
     position: relative;
     top: -40px;
     border-radius: 15px;
     box-shadow : 0 5px 15px rgba(0, 0, 0, 0.393);
     height: 150px;
     background-color: white;
-
 }
 
 .image{
     position: relative;
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
     width: 170px;
     height: 90px;
     border-radius: 15px;
@@ -27,7 +24,6 @@ body{
 }
 
 .card-box:hover{
-
     height: 200px;
     transition: 0.3s;
 }
@@ -35,7 +31,6 @@ body{
 .card-box:hover{
     top:-60px;
     transition: 0.3s ;
-
 }
 
 .card-box:hover .content{
@@ -43,18 +38,12 @@ body{
     transition-delay: 0.3s;
 }
 
-
-
 .content{
     position: relative;
     text-align: center;
     visibility: hidden;
     line-height: 8px;
     top: 30px;
-    
-    
-
-
 }
 
 .product-name{
@@ -70,13 +59,11 @@ body{
     font-weight: 700;
 }
 
-
 .product-image{
     width: 100%;
     position: relative;
     border-radius: 15px 15px 0 0;
     box-shadow : 0 2px 10px rgba(0, 0, 0, 0.211);
-
 }
 
 .addButton{
@@ -88,14 +75,11 @@ body{
     border: solid;
     padding: 7px;
     font-size: .8rem;
-    
 }
 
 .carousel.slide{
-
     width: 70%;
     margin: auto;
-
 }
 
 .d-block.w-100, .carousel-item.active, .carousel-inner{
@@ -114,7 +98,6 @@ body{
 }
 
 .title{
-
     font-family: 'Roboto', sans-serif ;
     font-weight: 700;
     font-size: 3rem;
@@ -132,11 +115,9 @@ body{
     border-radius: 20px 0px 0px 20px;
 }
 
-
 span{
     font-size: 1rem;
     kerning: 10%;
-
 }
 
 .col-md-8.check-out-box{
@@ -150,8 +131,6 @@ span{
     border-radius: 0 20px 20px 0;
     height: 100%;
     padding: 20px;
-    
-    
 
 }
 
@@ -161,15 +140,12 @@ table {
     text-align: center;
 	border-collapse: collapse;
     width: 100%;
-    
-    
 }
 
 td, th, td {
 	border: 1px solid rgb(0, 0, 0);
 	padding: 1em;
 }
-
 
 tfoot th {
 	text-align: right;
@@ -185,14 +161,11 @@ tfoot td {
 }
 
 .items td{
-    border-bottom: 2px dashed rgb(217, 217, 217);
-    
+    border-bottom: 2px dashed rgb(217, 217, 217); 
 }
 
 .checkout-table td, .checkout-table th, .checkout-table tr{
     border: 2px solid rgb(255, 255, 255);
-    
-
 }
 
 #total{
@@ -203,5 +176,70 @@ tfoot td {
     background-color: rgb(219, 219, 219);
 }
 
+@media only screen and (max-width: 991px) and (min-width: 450px)  {
+
+    .card-box{
+        margin-bottom: 80px;
+}
+}
+
+@media only screen and (max-width: 450px) {
+
+    .carousel.slide {
+      width: 100%;
+    }
+
+    .title{
+        font-size: 1rem;
+        margin: 40px 0 90px 0;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .image{
+        width: 90%;
+        top: -10px;
+    }
+    .product-image{
+        width: 100%;
+    }
+
+    .card-box{
+        margin-bottom: 40px;
+        height: 120px;
+    }
+
+    .product-name{
+        font-size: .7rem;
+    }
+    .product-price{
+        font-size: .7rem;
+    }
+    .addButton{
+        font-size: .5rem;
+        padding: 07px;
+    }
+    .content{
+        line-height: 4px;
+    }
+
+    .discount-picture{
+        margin-top: -20px;
+        border-radius: 15px;
+    }
+    .check-out-container{
+        border: 2px dashed rgb(217, 217, 217);
+        border-top: none;
+        border-radius: 0 0px 20px 20px;
+    }
+    .checkout-table{
+        font-size: 0.7rem;
+    }
+    .list-table{
+        font-size: 0.7rem;
+    }
+  }
 
 
